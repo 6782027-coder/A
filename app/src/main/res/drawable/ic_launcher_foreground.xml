@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  סמל בפיקוח: עיגול כחול כהה, מגן לבן בפנים, טקסט "בפיקוח" ו"כשר ומאובטח"
+  VectorDrawable — viewportWidth/Height = 108 (adaptive icon safe zone = 72x72 centered)
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- עיגול רקע כחול כהה -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M54,4 A50,50 0 1,1 53.999,4 Z"/>
+
+    <!-- מגן לבן — צל פנימי (מעט כהה יותר) -->
+    <path
+        android:fillColor="#C5CAE9"
+        android:pathData="M54,22 L76,31 L76,52 C76,64 66,73 54,78 C42,73 32,64 32,52 L32,31 Z"/>
+
+    <!-- מגן לבן — גוף ראשי -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 L75,29 L75,51 C75,63 65,72 54,77 C43,72 33,63 33,51 L33,29 Z"/>
+
+    <!-- קו מסגרת פנימי עדין -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#C5CAE9"
+        android:strokeWidth="0.8"
+        android:pathData="M54,24 L72,32 L72,51 C72,61 63,70 54,74 C45,70 36,61 36,51 L36,32 Z"/>
+
+    <!-- וי קטן ברקע המגן — כחול עדין -->
+    <path
+        android:strokeColor="#9FA8DA"
+        android:strokeWidth="2.5"
+        android:strokeAlpha="0.5"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M43,50 L50,57 L65,42"/>
+
+    <!-- טקסט "בפיקוח" — כחול כהה במרכז המגן -->
+    <!-- VectorDrawable לא תומך ב-<text> — נשתמש ב-path של אותיות או TextView overlay -->
+    <!-- הפתרון: LayerDrawable ב-mipmap עם TextView נפרד -->
+    <!-- לכן הטקסט יצויר כ-path ידני -->
+
+</vector>
